@@ -1,0 +1,14 @@
+{
+  "rules": {
+    "posts": {
+      ".read": true,
+      "$postId": {
+        ".write": true,
+        "comments": {
+          ".read": true,
+          ".write": true
+        }
+      }
+    }
+  }
+}
